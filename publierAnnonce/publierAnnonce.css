@@ -1,145 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-*{
-    font-family: 'Montserrat', sans-serif;
-}
-
-html,body{
-    height: 100%;
-}
-
-body{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
-  background: rgb(135, 135, 185)
 }
-.container{
-  display: flex;
-  justify-content: center;
-  margin: 0%;
-  padding: 0;
-  
- 
+body {
+  width: 100%;
+  background-color: #fff;
 }
-
-.destacados{
-  padding: 10px 0;
-  
-}  
-.box1{
-  padding-left: 10px;
-  
-} 
-.box1 h4 {
-  position:relative;
-  left: 13%;
-  padding: 10px 20px;
-  margin: 10px 0px;
-  margin-left: -30px;
-  font-size: 25px;
-  line-height:32px;
-  font-weight:bold;
-  color:#fff;
-  background:#05054d;
-  text-shadow:0 1px 1px rgba(0,0,0,0.2);
-  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.2);
-     -moz-box-shadow:0 1px 1px rgba(0,0,0,0.2);
-          box-shadow:0 1px 1px rgba(0,0,0,0.2);
-  zoom:1; 
-}
-
-.box1 h4:before,
-.box1 h4:after {
-  content:"";
-  position:absolute;
-  /* See "NOTE 2" */
-  z-index:-1;
-  top:100%;
-  left:0;
-  border-width:0 10px 10px 0;
-  border-style:solid;
-  border-color:transparent maroon;
-}
-
-/********************* seconde ******************************/
-
-.destacadose{
-  padding: 10px 0;
-}   
-.box2 h4 {
-  position:relative;
-  left: 13%;
-  padding: 10px 20px;
-  margin: 1px 0px;
-  margin-left: -30px;
-  font-size: 16px;
-  line-height: 15px;
-  font-weight:bold;
-  color:#fff;
-  background:#149ccf;
-  /* css3 extras */
-  text-shadow:0 1px 1px rgba(0,0,0,0.2);
-  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.2);
-     -moz-box-shadow:0 1px 1px rgba(0,0,0,0.2);
-          box-shadow:0 1px 1px rgba(0,0,0,0.2);
-  /* See "NOTE 1" */
-  zoom:1;
-}
-
-.box2 h4:before,
-.box2 h4:after {
-  content:"";
-  position:absolute;
-  /* See "NOTE 2" */
-  z-index:-1;
-  top:100%;
-  left:0;
-  border-width:0 10px 10px 0;
-  border-style:solid;
-  border-color:transparent #066487;
-}
-
-/********************* upload **************************/
-#files {
-display: none;
-}
-
-.nnah{
-  padding: 0;
-  margin: 5px;
-}
-
-.nnahs{
-  padding: 0;
-}
-
-.close{
-  position: absolute;
-  z-index: 1;
-  font-size: 14px;
-  margin-left: -5px;
-  margin-top: -7px;
-}
-
-.close span{
-  opacity: 1;
-  color: #000;
-}
-.form-control{
-  padding: 7px;
-  margin: 10px;
+* {
   box-sizing: border-box;
 }
-.dirhame{
-  width: 229.47px;
-  height: 40px;
-  display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-  
+.choix:hover {
+  background-color: #eee !important;
 }
-label{
+.icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.3rem;
+}
+.distance {
+  font-size: 14px;
   position: relative;
-left: 3%;}
+  top: -11px;
+}
+.flech-arrive {
+  color: blue;
+  transform: rotate(42deg);
+  font-size: 22px;
+}
+.btn-details {
+  position: relative;
+  top: 20px;
+}
 
+.convoi-name {
+  position: relative;
+  top: 6px;
+  font-weight: bold;
+}
+
+.convoi-img {
+  position: relative;
+  left: 11px;
+}
+.stars {
+  position: relative;
+  right: 3px;
+  bottom: 7px;
+}
+.nb-stars {
+  display: none;
+}
+label {
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .btn-details {
+    position: relative;
+    top: 20px;
+  }
+
+  .convoi-name {
+    position: relative;
+    top: 6px;
+    left: 14px;
+    font-weight: bold;
+  }
+  .stars {
+    left: 11px;
+  }
+  .in-prb {
+    width: 21px !important;
+  }
+  .convoi-img {
+    position: relative;
+    left: 11px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .btn-details {
+    position: relative;
+    top: 20px;
+  }
+  td .supp-sm {
+    display: none;
+  }
+  .nb-stars {
+    display: inline;
+  }
+  .convoi-name {
+    position: relative;
+    top: 12px;
+    bottom: 7px;
+    font-weight: bold;
+  }
+  .stars {
+    left: 11px;
+  }
+  .container2 {
+    box-shadow: none;
+  }
+  .convoi-img {
+    position: relative;
+    left: 11px;
+  }
+  /*style de profil*/
+}
+@media screen and (max-width: 768px) {
+  .aside-normale {
+    display: none !important;
+  }
+  .prenom {
+    margin-left: 15px !important;
+  }
+  .nom {
+    margin-left: 5px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+    .btn-details {
+    position: relative;
+    top: 20px;
+}
+  .convoi-name {
+    position: relative;
+    left: -12px;
+    top: 12px;
+    bottom: 7px;
+    font-weight: bold;
+  }
+  .stars {
+    left: -11px;
+  }
+  .convoi-img {
+    position: relative;
+    left: -17px;
+}
+}
+.container-filtre {
+    position: fixed;
+    width: 100%;
+    bottom: 8%;
+    text-align: center;
+}
+.filtrer {
+    background-color: red;
+    position: fixed;
+  width: 150px;
+  border: none;
+  border-radius: 35px;
+  right: 31%;
+  bottom: 8%;
+  display: none;
+  box-shadow: 0px 12px 41px 9px rgb(255, 82, 69);
+}
+@media screen and (max-width: 768px) {
+    .filtrer {
+        display: block;
+  }
+}
+.info-pres , .signaler button{
+    box-shadow: 0 4px 5px 0 rgb(84 84 84 / 20%), 0 2px 2px 0 rgb(84 84 84 / 20%), 0 3px 1px -2px rgb(84 84 84 / 20%);
+}
+.h6-info-prs {
+  margin-top: 2px;
+}
+@media screen and (max-width: 768px) {
+    .h6-info-prs {
+        margin-right: 10px;
+    }
+}
+
+.info-pres{
+    padding: 30px !important;
+}
+.signaler{
+    margin: 13px;
+    margin-left: 0px;
+    color: black;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+}
+
+/*Button de Modification de profil*/
+.ModifierProfile__button{
+     text-align: right;
+}
+.button-primary{
+    text-decoration: none;
+    text-transform:uppercase;
+    text-align: left;
+    background-color: #1b5ab1;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+.button-primary:hover{
+    color: white;
+    padding: 11px;
+}
+
+/*Style de Button de modification de photo de profil*/
+
+#input_img_profil{
+  display: none;
+}
 
 .btn:focus{
   box-shadow: none;
@@ -147,4 +216,14 @@ left: 3%;}
 
 .btn-close:focus{
   box-shadow: none;
+}
+ .sterix{
+  color: red;
+}
+.dirhame{
+  content: "MAD";
+  position: relative;
+  left: 0%;
+  bottom: -50%;
+
 }
