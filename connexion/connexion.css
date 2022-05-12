@@ -7,12 +7,15 @@
         background-size: cover;
        
         }
+        *{
+            text-transform: capitalize; 
+        }
      body,
      html {
          margin: 0;
          padding: 0;
          height: 100%;
-         text-transform: capitalize;
+        
          /* background:#33323a */
         
      }
@@ -98,4 +101,7 @@
     
     .btn-close:focus{
         box-shadow: none;
+    }
+    .bgmodel{
+        background-color: #b3d0da;
     }
